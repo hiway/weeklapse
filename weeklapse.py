@@ -9,17 +9,18 @@ creds = json.load(open('creds.json'))
 # Create an app
 # Mastodon.create_app(
 #         'weeklapse',
-#         api_base_url = 'https://mastodon.sharma.io',
+#         api_base_url = base_url,
 #         to_file = 'weeklapse_clientcred.secret'
 # )
 
 # Log in
 username = creds['username']
 password = creds['password']
+base_url = creds['base_url']
 
 mastodon = Mastodon(
         client_id = 'weeklapse_clientcred.secret',
-        api_base_url = 'https://mastodon.sharma.io',
+        api_base_url = base_url
 )
 
 mastodon.log_in(
