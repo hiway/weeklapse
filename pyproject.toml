@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "weeklapse"
+version = "0.1.0"
+description = ""
+authors = ["Harshad Sharma <harshad@sharma.io>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+"Mastodon.py" = "^1.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
